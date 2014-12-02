@@ -14,24 +14,15 @@ use kartik\datecontrol\DateControl;
 
 <div class="tag-form">
 
-    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+    <?php $form = ActiveForm::begin(['options'=>['enctype'=>'multipart/form-data']]); ?>
 
-    'model' => $model,
-    'form' => $form,
-    'columns' => 1,
-    'attributes' => [
+    <?= $form->field($model, 'name')->textInput(['maxlength' => 50]) ?>
+	  
+    <?= $form->field($model, 'des')->textInput(['maxlength' => 255]) ?>
 
-'addtime'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Addtime...']], 
-
-'name'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Name...', 'maxlength'=>50]], 
-
-'des'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Des...', 'maxlength'=>255]], 
-
-    ]
-
-
-    ]);
-    echo Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
-    ActiveForm::end(); ?>
+    <div class="form-group">
+        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+    </div>
+    <?php ActiveForm::end(); ?>
 
 </div>

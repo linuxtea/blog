@@ -35,3 +35,14 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
 </div>
+<script src="/js/tinymce/tinymce.min.js"></script>
+<script>
+tinymce.init({
+	selector:'textarea',
+	plugins: ["jbimages","image"],
+	menubar: false,
+	toolbar: "insertfile undo redo | styleselect fontsizeselect| bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      | print preview fullpage | forecolor backcolor jbimages image",  
+	//theme_advanced_buttons3: //"tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
+	language:'zh_CN'
+});
+</script>

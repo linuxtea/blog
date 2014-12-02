@@ -5,6 +5,7 @@ use Yii;
 use frontend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
+use frontend\models\Product;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\base\InvalidParamException;
@@ -68,6 +69,8 @@ class SiteController extends Controller
         ];
     }
 
+
+	
 	public function actionBtest()
     {
         return $this->render('btest');
@@ -76,7 +79,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
 		$connection=Yii::$app->db;
-		$command = $connection->createCommand('SELECT * FROM yh_users');
+		$command = $connection->createCommand('SELECT * FROM lt_users');
 		$posts = $command->queryAll();
         return $this->render('index');
     }

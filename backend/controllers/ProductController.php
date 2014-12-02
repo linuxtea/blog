@@ -84,7 +84,7 @@ class ProductController extends BaseController
 					throw new NotFoundHttpException('不支持的图片类型');
 				}
 				$upload->name = str_replace(".","",microtime(true)).".".$ext;
-				$uploadpath = '/website/yii2/pictures/upload/' . date('Ymd',time()) . '/';
+				$uploadpath = Yii::$app->params['uploadimagepath'].'upload/' . date('Ymd',time()) . '/';
 				if(!file_exists($uploadpath)){
 					mkdir($uploadpath,0755,true);
 				}
@@ -93,7 +93,7 @@ class ProductController extends BaseController
 				$picturesModel = new Pictures;
 				$picturesModel->itemid=$model->id;
 				$picturesModel->userid=Yii::$app->user->identity->id;
-				$picturesModel->original=str_replace("/website/yii2/pictures/","",$orig);
+				$picturesModel->original=str_replace(Yii::$app->params['uploadimagepath'],"",$orig);
 				$picturesModel->etype=0;
 				$picturesModel->addtime=time();
 				$picturesModel->save();

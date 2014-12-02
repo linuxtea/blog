@@ -65,7 +65,7 @@ class TagController extends BaseController
     public function actionCreate()
     {
         $model = new Tag;
-
+		$model->addtime = time();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
