@@ -14,13 +14,7 @@ use yii\filters\AccessControl;
 class BaseController extends Controller
 {
 	 public $enableCsrfValidation = false;
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-       
-    }
+
 
     /**
      * @inheritdoc
