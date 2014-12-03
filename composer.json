@@ -20,15 +20,14 @@
         "yiisoft/yii2-swiftmailer": "*",
         "yiisoft/yii2-gii": "*",
         "mdmsoft/yii2-admin": "*",
-        "3ch3r46/yii2-tinymce": "1.0.0",
         "warrence/yii2-kartikgii": "dev-master",
         "robregonm/yii2-pdf": "dev-master",
         "mpdf/mpdf": "dev-master",
         "kartik-v/yii2-mpdf": "dev-master",
-		"mihaildev/yii2-ckeditor": "*",
 		"mdmsoft/yii2-upload-file": "*",
-		"mihaildev/yii2-elfinder": "*",
-		"philippfrenzel/yii2masonry": "*"
+		"philippfrenzel/yii2masonry": "*",
+        "zxbodya/yii2-elfinder": "*@dev",
+        "zxbodya/yii2-tinymce": "*@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

@@ -9,31 +9,34 @@ use yii\bootstrap\ActiveForm;
     </p>
     <form role="form" id="opproduct" name="opproduct" method="post" action="" enctype="multipart/form-data">
 
-	  <div class="form-group">
-		<label for="inputTitle">标题</label>
-		<input type="text" name="product[title]" class="form-control" id="inputTitle" placeholder="标题">
-	  </div>
-	  <div class="form-group">
-		<label for="inputPictures">图片</label>
-		<input type="file" name="thumb" id="inputPictures">
-	  </div>
-      
-      <div class="form-group">
-		<label for="inputTag">标签</label>
-		<input type="text" name="product[tag]" class="form-control" id="inputTag" placeholder="标签，多个标签使用空格间隔">
-	  </div>
-      <div class="form-group">
-      	<?php foreach($tagRows as $item):?>
-		<button type="button" class="btn btn-info tagbutton"><?php echo $item['name'];?></button>
-        <?php endforeach;?>
-	  </div>
-	  <div class="form-group">
-		<label for="inputContent">内容</label>
-		<textarea rows="20" name="product[content]" id="inputContent" class="form-control"></textarea>
-	  </div>
+        <div class="form-group">
+            <label for="inputTitle">标题</label>
+            <input type="text" name="product[title]" class="form-control" id="inputTitle" placeholder="标题">
+        </div>
 
-	  <button type="submit" class="btn btn-default">提交</button>
-	</form>
+        <div class="form-group">
+            <label class="control-label" for="inputPictures">图片</label>
+            <input id="inputPictures" type="file"  name="thumb">
+            <input type="file" name="thumb1">
+            <input type="file" name="thumb2">
+            <a href="javascript:void(0)" id="add_file">+上传多张图片</a>
+        </div>
+        <div class="form-group">
+            <label for="inputTag">标签</label>
+            <input type="text" name="product[tag]" class="form-control" id="inputTag" placeholder="标签，多个标签使用空格间隔">
+        </div>
+        <div class="form-group">
+			<?php foreach($tagRows as $item):?>
+            <button type="button" class="btn btn-info tagbutton"><?php echo $item['name'];?></button>
+            <?php endforeach;?>
+        </div>
+        <div class="form-group">
+            <label for="inputContent">内容</label>
+            <textarea rows="20" name="product[content]" id="inputContent" class="form-control"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-default">提交</button>
+    </form>
 
 
 </div>

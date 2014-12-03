@@ -19,7 +19,18 @@ class Tag extends BaseModel
     {
         return '{{%tag}}';
     }
-
+	
+	public function getTagRows($itemid,$etype){
+		$sql = "select a.id,a.name from ".self::tableName()." as a 
+				left join ".ItemTag::tableName()." as b 
+				on a.id=b.tagid
+				where b.itemid={$itemid} and b.etype=1";
+		$connection=Yii::$app->db;
+		$command = $connection->createCommand($sql);
+		$rows = $command->queryAll(); 
+		return $rows;	
+	}	
+	
 	public function opTag($str,$itemid,$etype){
 		$connection=Yii::$app->db;
 		$sql = "delete from lt_item_tag where itemid=$itemid and etype='".$etype."'";
@@ -38,7 +49,7 @@ class Tag extends BaseModel
 			$command = $connection->createCommand($sql);
 			$rows = $command->queryOne();
 			if (empty($rows)){
-				$sql = "insert into lt_tag(name,addtime) values('{$title}',{$time})";
+				$sql = "insert into lt_tag(name,addtime) values('{$name}',{$time})";
 				$command=$connection->createCommand($sql);
 				$command->execute();
 				$tagid = $connection->getLastInsertID();	

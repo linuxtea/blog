@@ -4,61 +4,8 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "edc9885e5b12855b7683126a93a2e671",
+    "hash": "0a4cf4efa56157831a16fe8da66f25ac",
     "packages": [
-        {
-            "name": "3ch3r46/yii2-tinymce",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/3ch3r46/yii2-tinymce.git",
-                "reference": "2b2b2d5e91bc992e38e8847d299c3752f536d370",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/3ch3r46/yii2-tinymce/get/2b2b2d5e91bc992e38e8847d299c3752f536d370.zip",
-                "reference": "2b2b2d5e91bc992e38e8847d299c3752f536d370",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://pkg.phpcomposer.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "a3ch3r46\\tinymce\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Moh Khoirul Anam",
-                    "email": "3ch3r46@gmail.com"
-                }
-            ],
-            "description": "The TinyMCE Extension for yii framework",
-            "keywords": [
-                "editor",
-                "extension",
-                "text",
-                "tinymce",
-                "wyswyg",
-                "yii2"
-            ],
-            "time": "2014-05-28 15:40:52"
-        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.1",
@@ -180,16 +127,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.41",
+            "version": "3.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "9c2c236cf29b3e78b635f2ba3c588174336d9228"
+                "reference": "ba392f1c9c1f7a05d1b89a5e49cbd0610face768"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/9c2c236cf29b3e78b635f2ba3c588174336d9228",
-                "reference": "9c2c236cf29b3e78b635f2ba3c588174336d9228",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/ba392f1c9c1f7a05d1b89a5e49cbd0610face768",
+                "reference": "ba392f1c9c1f7a05d1b89a5e49cbd0610face768",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +729,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-builder.git",
-                "reference": "041eb3c4840c1d73e1ea574eff3dedd5ed28d4d2",
+                "reference": "a28f3164e2bb92e8b00901519c6ab1430b384c74",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -792,8 +739,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-builder/zipball/041eb3c4840c1d73e1ea574eff3dedd5ed28d4d2",
-                "reference": "041eb3c4840c1d73e1ea574eff3dedd5ed28d4d2",
+                "url": "https://api.github.com/repos/kartik-v/yii2-builder/zipball/a28f3164e2bb92e8b00901519c6ab1430b384c74",
+                "reference": "a28f3164e2bb92e8b00901519c6ab1430b384c74",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -833,7 +780,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-27 13:24:05"
+            "time": "2014-12-01 14:00:35"
         },
         {
             "name": "kartik-v/yii2-datecontrol",
@@ -960,7 +907,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "eecda0592347881f0ad6506c819679c9f4edef67",
+                "reference": "46eb2a7e4fda47216330eaf394366c19c02f330b",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -970,8 +917,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/eecda0592347881f0ad6506c819679c9f4edef67",
-                "reference": "eecda0592347881f0ad6506c819679c9f4edef67",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/46eb2a7e4fda47216330eaf394366c19c02f330b",
+                "reference": "46eb2a7e4fda47216330eaf394366c19c02f330b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1008,7 +955,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-22 11:54:39"
+            "time": "2014-12-02 10:57:31"
         },
         {
             "name": "kartik-v/yii2-helpers",
@@ -1250,7 +1197,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
-                "reference": "33399c3c44141f5a9e013e9829402d2ca6642bdf",
+                "reference": "d3d9a00865b6af1ef8412388186892054e5c0dda",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -1260,8 +1207,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/33399c3c44141f5a9e013e9829402d2ca6642bdf",
-                "reference": "33399c3c44141f5a9e013e9829402d2ca6642bdf",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/d3d9a00865b6af1ef8412388186892054e5c0dda",
+                "reference": "d3d9a00865b6af1ef8412388186892054e5c0dda",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1301,7 +1248,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-11-26 10:04:45"
+            "time": "2014-12-01 13:57:47"
         },
         {
             "name": "kartik-v/yii2-widget-affix",
@@ -2423,7 +2370,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mdmsoft/yii2-admin.git",
-                "reference": "2238f0f5dab85f628160345120435bfb82398d2d",
+                "reference": "c0beb21acd3c04b819a8ae56037467a9040d860c",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -2433,8 +2380,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mdmsoft/yii2-admin/zipball/2238f0f5dab85f628160345120435bfb82398d2d",
-                "reference": "2238f0f5dab85f628160345120435bfb82398d2d",
+                "url": "https://api.github.com/repos/mdmsoft/yii2-admin/zipball/c0beb21acd3c04b819a8ae56037467a9040d860c",
+                "reference": "c0beb21acd3c04b819a8ae56037467a9040d860c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2477,7 +2424,7 @@
                 "auth",
                 "yii"
             ],
-            "time": "2014-11-27 01:22:01"
+            "time": "2014-12-02 01:06:53"
         },
         {
             "name": "mdmsoft/yii2-upload-file",
@@ -2536,125 +2483,6 @@
                 "yii"
             ],
             "time": "2014-11-03 11:25:43"
-        },
-        {
-            "name": "mihaildev/yii2-ckeditor",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MihailDev/yii2-ckeditor.git",
-                "reference": "d20aa7f6bcf610fee226d6eb15212a279875bf87",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MihailDev/yii2-ckeditor/zipball/d20aa7f6bcf610fee226d6eb15212a279875bf87",
-                "reference": "d20aa7f6bcf610fee226d6eb15212a279875bf87",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://pkg.phpcomposer.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "mihaildev\\ckeditor\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mihail",
-                    "email": "mihail.kucher@gmail.com",
-                    "homepage": "https://github.com/MihailDev",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Yii2 CKEditor",
-            "homepage": "https://github.com/MihailDev/yii2-ckeditor",
-            "keywords": [
-                "CKEditor",
-                "editor",
-                "wysiwyg",
-                "yii"
-            ],
-            "time": "2014-11-19 22:04:08"
-        },
-        {
-            "name": "mihaildev/yii2-elfinder",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MihailDev/yii2-elfinder.git",
-                "reference": "2abb7f1d26d58ed01127416f68402624ff6bf1f5",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MihailDev/yii2-elfinder/zipball/2abb7f1d26d58ed01127416f68402624ff6bf1f5",
-                "reference": "2abb7f1d26d58ed01127416f68402624ff6bf1f5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://pkg.phpcomposer.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "yiisoft/yii2-jui": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "mihaildev\\elfinder\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mihail",
-                    "email": "mihail.kucher@gmail.com",
-                    "homepage": "https://github.com/MihailDev",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Yii2 ElFinder",
-            "homepage": "https://github.com/MihailDev/yii2-elfinder",
-            "keywords": [
-                "elfinder",
-                "filemanager",
-                "yii"
-            ],
-            "time": "2014-11-28 23:44:46"
         },
         {
             "name": "mpdf/mpdf",
@@ -2997,7 +2825,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "15e95d5dbb93a01902781cff11c819763a73ff78",
+                "reference": "7d915a65b12db5a5c15cfd9bbdf9432178f75e4a",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -3007,8 +2835,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/15e95d5dbb93a01902781cff11c819763a73ff78",
-                "reference": "15e95d5dbb93a01902781cff11c819763a73ff78",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7d915a65b12db5a5c15cfd9bbdf9432178f75e4a",
+                "reference": "7d915a65b12db5a5c15cfd9bbdf9432178f75e4a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3089,7 +2917,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-11-30 20:02:43"
+            "time": "2014-12-02 03:23:26"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -3097,7 +2925,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "c5d0f2518a11a90811735fc6b8fb3c080c0cb2f1",
+                "reference": "14c09f022ddfd0ffe74d8668ad88eb967b8145d5",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -3107,8 +2935,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/c5d0f2518a11a90811735fc6b8fb3c080c0cb2f1",
-                "reference": "c5d0f2518a11a90811735fc6b8fb3c080c0cb2f1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/14c09f022ddfd0ffe74d8668ad88eb967b8145d5",
+                "reference": "14c09f022ddfd0ffe74d8668ad88eb967b8145d5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3147,7 +2975,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2014-11-30 02:29:53"
+            "time": "2014-12-02 18:33:48"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -3388,6 +3216,123 @@
                 "yii2"
             ],
             "time": "2014-10-12 20:44:45"
+        },
+        {
+            "name": "zxbodya/yii2-elfinder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zxbodya/yii2-elfinder.git",
+                "reference": "1d51b6db0e02aac6e6e7f8a4c42fc67670c1df89",
+                "mirrors": [
+                    {
+                        "url": "/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zxbodya/yii2-elfinder/zipball/1d51b6db0e02aac6e6e7f8a4c42fc67670c1df89",
+                "reference": "1d51b6db0e02aac6e6e7f8a4c42fc67670c1df89",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://pkg.phpcomposer.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-jui": "*"
+            },
+            "suggest": {
+                "zxbodya/yii2-tinymce": "Extension with TinyMce WYSIWYG editor, that can be used with elFinder"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "zxbodya\\yii2\\elfinder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bogdan Savluk",
+                    "email": "savluk.bogdan@gmail.com"
+                }
+            ],
+            "description": "Extension to use elFinder 1.x file manager in Yii2 application",
+            "keywords": [
+                "elfinder",
+                "extension",
+                "file manager",
+                "tinymce",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-10-07 19:20:45"
+        },
+        {
+            "name": "zxbodya/yii2-tinymce",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zxbodya/yii2-tinymce.git",
+                "reference": "0aa425209f8a86464b281aa682a0f7ee7fc08dfb",
+                "mirrors": [
+                    {
+                        "url": "/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zxbodya/yii2-tinymce/zipball/0aa425209f8a86464b281aa682a0f7ee7fc08dfb",
+                "reference": "0aa425209f8a86464b281aa682a0f7ee7fc08dfb",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://pkg.phpcomposer.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "suggest": {
+                "zxbodya/yii2-elfinder": "To add elFinder file manager"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "zxbodya\\yii2\\tinymce\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bogdan Savluk",
+                    "email": "savluk.bogdan@gmail.com"
+                }
+            ],
+            "description": "Yii2 extension to use TinyMce with Compressor and FileManager",
+            "keywords": [
+                "extension",
+                "tinymce",
+                "wysiwyg",
+                "yii2"
+            ],
+            "time": "2014-10-01 15:55:18"
         }
     ],
     "packages-dev": [
@@ -3634,7 +3579,9 @@
         "warrence/yii2-kartikgii": 20,
         "robregonm/yii2-pdf": 20,
         "mpdf/mpdf": 20,
-        "kartik-v/yii2-mpdf": 20
+        "kartik-v/yii2-mpdf": 20,
+        "zxbodya/yii2-elfinder": 20,
+        "zxbodya/yii2-tinymce": 20
     },
     "prefer-stable": false,
     "platform": {

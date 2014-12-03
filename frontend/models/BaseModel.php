@@ -23,7 +23,7 @@ class BaseModel extends \yii\db\ActiveRecord
 		$sql = "select {$select} from $table {$where}";
 		$connection=Yii::$app->db;
 		$command = $connection->createCommand($sql);
-		$row = $command->queryRow(); 
+		$row = $command->queryOne(); 
 		return $row;	
 	}	
 	

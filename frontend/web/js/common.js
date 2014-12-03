@@ -4,9 +4,14 @@ $(function(){
 		var inputTag = $("#inputTag").val()+" "+tag;
 		$("#inputTag").val(inputTag)
 	});	
-	
-	
-	
+	//多图片上传
+	var j=4;
+	$('#add_file').click(function()
+	{
+		$('#add_file').before("<div class='upimg'><input type='file' name='thumb"+j+"'></div>");
+		j++;
+	})
+	$('.carousel').carousel();
 	
 	
 	

@@ -3,9 +3,8 @@ use yii\helpers\Html;
 use kartik\widgets\ActiveForm;
 use kartik\builder\Form;
 use kartik\datecontrol\DateControl;
-use a3ch3r46\tinymce\TinyMCE;
-use mihaildev\ckeditor\CKEditor;
-use mihaildev\elfinder\ElFinder;
+use zxbodya\yii2\tinymce\TinyMce;
+use zxbodya\yii2\elfinder\TinyMceElFinder;
 /**
  * @var yii\web\View $this
  * @var app\models\Product $model
@@ -26,25 +25,18 @@ use mihaildev\elfinder\ElFinder;
         <img id="thumbimg"  name="picthumb" src="" style="height:101px;width:182px; display:none"/>
 	</div>
 	
-	
-	<?php echo $form->field($model, 'content')->widget(CKEditor::className(), [
-					'editorOptions' => ElFinder::ckeditorOptions('elfinder',[
-						'height' => '300px',
-						'preset'=>'base',
-						'inline'=>false,
-						'filebrowserImageUploadUrl'=>'index.php?r=ckeditor/upload',
-					
-					]),
-				]
-    );?>
 	<?php
-		//echo TinyMCE::widget(['name' => 'Product[content]','value'=>$model->content, 'toggle' => ['active' => false]]);
+		echo $form->field($model, 'content')->widget(
+			TinyMce::className(),
+			[
+				'fileManager' => [
+					'class' => TinyMceElFinder::className(),
+					'connectorRoute' => 'el-finder/connector',
+				],
+			]
+		);
 	?>
-	  
     <?= $form->field($model, 'userid')->textInput(['maxlength' => 50]) ?>
-
-    <?= $form->field($model, 'addtime')->textInput() ?>
-
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

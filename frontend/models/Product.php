@@ -19,6 +19,14 @@ class Product extends BaseModel
     {
         return '{{%product}}';
     }
+	
+	public function getDetail($id){
+		$sql = "select * from ".self::tableName()." where id=".$id;
+		$connection=Yii::$app->db;
+		$command = $connection->createCommand($sql);
+		$row = $command->queryOne(); 
+		return $row;		
+	}
 
     /**
      * @inheritdoc

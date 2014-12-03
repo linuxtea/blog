@@ -2,7 +2,8 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
-
+use zxbodya\yii2\tinymce\TinyMce;
+use zxbodya\yii2\elfinder\TinyMceElFinder;
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
@@ -21,6 +22,17 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
                 <?= $form->field($model, 'name') ?>
+                <?php
+                	echo $form->field($model, 'name')->widget(
+						TinyMce::className(),
+						[
+							'fileManager' => [
+								'class' => TinyMceElFinder::className(),
+								'connectorRoute' => 'el-finder/connector',
+							],
+						]
+					);
+				?>
                 <?= $form->field($model, 'email') ?>
                 <?= $form->field($model, 'subject') ?>
                 <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
