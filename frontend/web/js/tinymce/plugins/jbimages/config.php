@@ -39,7 +39,7 @@
 
 	$ymd = date("Ymd",time());
 	$config['img_path'] = "http://img.letaowan.com/upload/".$ymd; // Relative to domain name
-	$config['upload_path'] = "/website/letaowan/pictures/upload/".$ymd; // Physical path. [Usually works fine like this]
+	$config['upload_path'] = "D:/letaowan/pictures/upload/".$ymd; // Physical path. [Usually works fine like this]
 
 
 /*-------------------------------------------------------------------

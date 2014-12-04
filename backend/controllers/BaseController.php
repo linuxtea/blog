@@ -6,7 +6,7 @@ class BaseController extends Controller
 {
     public function actions()
     {
-		if(Yii::$app->user->identity->username!='admin'){
+		if(empty(Yii::$app->user->identity->username)|| Yii::$app->user->identity->username!='admin'){
 			$this->redirect(['/site/login']);
 		}
     }
